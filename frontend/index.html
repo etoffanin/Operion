@@ -4,28 +4,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>CY 1.0 | Registro de Container</title>
+  <title>Operion | Registro de Container</title>
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./styles/global.css" />
 </head>
 <body>
 
   <main class="app">
 
     <header class="app-header">
-      <h1>CY 1.0</h1>
-      <p>
-        Sistema de registro, filmagem e evidência de estufagem de containers
-      </p>
+      <h1>Operion 1.1</h1>
+      <p>Sistema de registro, filmagem e evidência de estufagem de containers</p>
     </header>
 
-    <!-- DADOS DA OPERAÇÃO -->
     <section class="card">
-
       <h2>DADOS DA OPERAÇÃO</h2>
 
       <form id="operationForm" class="form-grid">
-
         <div class="form-group">
           <label for="date">DATA</label>
           <input type="date" id="date" required />
@@ -33,125 +28,61 @@
 
         <div class="form-group">
           <label for="booking">BOOKING</label>
-          <input
-            type="text"
-            id="booking"
-            placeholder="Ex: EBKG16527607"
-            required
-          />
+          <input type="text" id="booking" placeholder="Ex: EBKG16527607" required />
         </div>
 
         <div class="form-group">
           <label for="containerCode">CONTAINER</label>
-          <input
-            type="text"
-            id="containerCode"
-            placeholder="Ex: TCLU7875208"
-            required
-          />
+          <input type="text" id="containerCode" placeholder="Ex: TCLU7875208" required />
         </div>
 
         <div class="form-group">
           <label for="material">MATERIAL</label>
-          <input
-            type="text"
-            id="material"
-            placeholder="Ex: 600894"
-            required
-          />
+          <input type="text" id="material" placeholder="Ex: 600894" required />
         </div>
 
         <div class="form-group">
           <label for="coilTotal">QUANTIDADE DE BOBINAS</label>
-          <input
-            type="number"
-            id="coilTotal"
-            min="1"
-            placeholder="Ex: 6"
-            required
-          />
+          <input type="number" id="coilTotal" min="1" placeholder="Ex: 6" required />
         </div>
-
       </form>
-
     </section>
 
-    <!-- CÂMERA -->
     <section class="card">
-
       <h2>CÂMERA</h2>
 
       <div class="camera-area">
-
-        <video
-          id="cameraPreview"
-          autoplay
-          muted
-          playsinline
-        ></video>
-
+        <video id="cameraPreview" autoplay muted playsinline></video>
         <canvas id="photoCanvas"></canvas>
 
         <div id="cameraStatus" class="status-badge">
           Câmera desligada
         </div>
-
       </div>
 
       <div class="button-group">
-
-        <button id="openCameraBtn" type="button">
-          Abrir câmera
-        </button>
-
-        <button id="startRecordBtn" type="button" disabled>
-          Iniciar gravação
-        </button>
-
-        <button id="stopRecordBtn" type="button" disabled>
-          Finalizar gravação
-        </button>
-
+        <button id="openCameraBtn" type="button">Abrir câmera</button>
+        <button id="startRecordBtn" type="button" disabled>Iniciar gravação</button>
+        <button id="stopRecordBtn" type="button" disabled>Finalizar gravação</button>
       </div>
-
     </section>
 
-    <!-- FOTOS -->
     <section class="card">
-
       <h2>FOTOS DA OPERAÇÃO</h2>
 
       <div class="button-group">
-
-        <button id="emptyContainerPhotoBtn" type="button" disabled>
-          Foto container vazio
-        </button>
-
-        <button id="containerIdPhotoBtn" type="button" disabled>
-          Foto identificação
-        </button>
-
-        <button id="middlePhotoBtn" type="button" disabled>
-          Foto intermediária
-        </button>
-
-        <button id="finalPhotoBtn" type="button" disabled>
-          Foto final
-        </button>
-
+        <button id="emptyContainerPhotoBtn" type="button" disabled>Foto container vazio</button>
+        <button id="containerIdPhotoBtn" type="button" disabled>Foto identificação</button>
+        <button id="middlePhotoBtn" type="button" disabled>Foto intermediária</button>
+        <button id="finalPhotoBtn" type="button" disabled>Foto final</button>
       </div>
 
       <div id="photoGallery" class="photo-gallery">
-        <p class="empty-message">
-          Nenhuma foto capturada ainda.
-        </p>
+        <p class="empty-message">Nenhuma foto capturada ainda.</p>
       </div>
-
     </section>
 
-    <!-- CONTROLE DE BOBINAS -->
     <section class="card">
-
       <h2>CONTROLE DE BOBINAS</h2>
 
       <div class="coil-counter">
@@ -160,48 +91,35 @@
         <span id="coilTotalDisplay">0</span>
       </div>
 
-      <button id="addCoilBtn" type="button" disabled>
-        Bobina carregada
-      </button>
+      <button id="addCoilBtn" type="button" disabled>Bobina carregada</button>
 
       <p id="coilMessage" class="info-message">
         Informe a quantidade de bobinas para iniciar o controle.
       </p>
-
     </section>
 
-    <!-- FINALIZAÇÃO -->
     <section class="card">
-
       <h2>FINALIZAÇÃO</h2>
 
       <div class="button-group">
-
-        <button id="generatePackageBtn" type="button" disabled>
-          Gerar pacote da operação
-        </button>
-
-        <button id="sendTeamsBtn" type="button" disabled>
-          Enviar para Teams
-        </button>
-
+        <button id="generatePackageBtn" type="button" disabled>Gerar pacote da operação</button>
+        <button id="sendTeamsBtn" type="button" disabled>Enviar para Teams</button>
       </div>
 
-      <a
-        id="downloadVideoLink"
-        class="download-link hidden"
-        download="cy-video-final.webm"
-      >
+      <a id="downloadVideoLink" class="download-link hidden" download="operion-video-final.webm">
         Baixar vídeo final
       </a>
 
       <pre id="operationSummary" class="summary-box"></pre>
-
     </section>
 
   </main>
 
-  <script src="script.js"></script>
+  <script src="./scripts/state.js" defer></script>
+  <script src="./scripts/ui.js" defer></script>
+  <script src="./scripts/camera.js" defer></script>
+  <script src="./scripts/recorder.js" defer></script>
+  <script src="./scripts/main.js" defer></script>
 
 </body>
 </html>
