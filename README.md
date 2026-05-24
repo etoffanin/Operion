@@ -1,19 +1,19 @@
 <div align="center">
 
-# ⚙️ Operion (versão CY)
+# ⚙️ Operion 1.1.0
 
-### Sistema de registro, filmagem e evidência de estufagem de containers
+### Sistema de registro, filmagem e evidência operacional de estufagem de containers
 
 <br>
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JAVASCRIPT-222222?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
-![MVP](https://img.shields.io/badge/MVP-FUNCIONAL-22C55E?style=for-the-badge)
+![STATUS](https://img.shields.io/badge/STATUS-EM%20DESENVOLVIMENTO-22C55E?style=for-the-badge)
 
 <br>
 
-> Sistema web desenvolvido para registrar dados operacionais, capturar fotos, gravar evidências e controlar o carregamento de bobinas durante operações de estufagem.
+> Sistema web desenvolvido para registrar operações, capturar evidências visuais e organizar processos de carregamento de bobinas em containers.
 
 </div>
 
@@ -27,21 +27,21 @@
 
 <div align="center">
 
-### Dados da operação
+### Dashboard operacional
 
-<img width="1422" height="481" alt="image" src="https://github.com/user-attachments/assets/c24eb232-ba54-45d4-ab75-e935d60e328a" />
-
-<br><br>
-
-### Câmera operacional
-
-<img width="1189" height="947" alt="image" src="https://github.com/user-attachments/assets/234908c4-1833-4902-85cd-a5a87b7d52d1" />
+<img width="1341" height="487" alt="image" src="https://github.com/user-attachments/assets/b63dc1cc-4d17-4002-84ce-80047b742d2c" />
 
 <br><br>
 
-### Fotos, controle de bobinas e finalização
+### Área de câmera e gravação
 
-<img width="1283" height="750" alt="image" src="https://github.com/user-attachments/assets/931b9a07-fac1-42ae-b70f-96db4dfa8371" />
+<img width="897" height="601" alt="image" src="https://github.com/user-attachments/assets/d3d95ea8-7609-4312-a7f6-6bbf567e57b7" />
+
+<br><br>
+
+### Controle operacional e finalização
+
+<img width="984" height="599" alt="image" src="https://github.com/user-attachments/assets/6d3c505f-5970-4951-b66b-410f67e84d75" />
 
 </div>
 
@@ -57,11 +57,11 @@
 
 <table>
   <tr>
-    <td align="center">
-      <img width="1080" height="2400" alt="1000630020" src="https://github.com/user-attachments/assets/99c3d3c0-873b-4d21-bf5a-2ddf3481b24f" />
+    <td>
+      <img src="https://github.com/user-attachments/assets/5f5e80cb-7406-4667-b879-9fd58be258e8" width="220" />
     </td>
-    <td align="center">
-      <img width="1080" height="2400" alt="1000630021" src="https://github.com/user-attachments/assets/e278c9af-ef53-4637-8fc3-c2694fc6a112" />
+    <td>
+      <img src="https://github.com/user-attachments/assets/7ccebd48-54ae-4c80-9c0d-de5828779f5a" width="220" />
     </td>
   </tr>
 </table>
@@ -75,17 +75,19 @@
 ## 📌 SOBRE O PROJETO
 
 </div>
+
 O Operion nasceu como um MVP para modernizar o registro operacional de estufagem de containers.
 
 A proposta é transformar um processo que normalmente depende de gravações separadas, fotos soltas e controle manual em um fluxo mais organizado, visual e rastreável.
 
-Nesta primeira versão, o foco foi criar uma base funcional para:
+Nesta versão atual, o foco principal é:
 
 - registrar dados da operação;
 - abrir a câmera diretamente pelo navegador;
 - capturar fotos importantes do processo;
 - controlar a quantidade de bobinas carregadas;
 - gerar um resumo operacional;
+- organizar melhor a arquitetura do sistema;
 - preparar a estrutura para futuras automações.
 
 ---
@@ -101,9 +103,10 @@ Nesta primeira versão, o foco foi criar uma base funcional para:
 - Área dedicada para filmagem operacional
 - Controle progressivo de bobinas carregadas
 - Geração de pacote/resumo da operação
-- Botão planejado para envio ao Teams
+- Download do vídeo final
 - Layout responsivo para desktop e mobile
-- Interface simples para uso em ambiente operacional
+- Estrutura JavaScript modular
+- Interface otimizada para ambiente operacional
 
 ---
 
@@ -113,11 +116,17 @@ Nesta primeira versão, o foco foi criar uma base funcional para:
 
 </div>
 
-O objetivo do **Operion** não é apenas criar uma tela bonita.
+O objetivo do **Operion** não é apenas criar uma interface bonita.
 
 A ideia é validar uma solução real para um problema real: organizar evidências operacionais de forma simples, prática e acessível.
 
-Esse projeto serve como base para uma evolução maior, futuramente podendo incluir login, banco de dados, armazenamento em nuvem, histórico de operações, integração com Microsoft Teams e automações inteligentes.
+Esse projeto também serve como evolução prática em:
+
+- arquitetura frontend;
+- modularização;
+- organização de software;
+- engenharia de software;
+- desenvolvimento de soluções reais.
 
 ---
 
@@ -133,8 +142,10 @@ Esse projeto serve como base para uma evolução maior, futuramente podendo incl
 |---|---|
 | HTML5 | Estrutura da aplicação |
 | CSS3 | Layout, responsividade e identidade visual |
-| JavaScript | Lógica, câmera, botões e controle da operação |
-| Web APIs | Acesso à câmera e recursos do navegador |
+| JavaScript | Lógica operacional e controle do sistema |
+| MediaDevices API | Acesso à câmera |
+| MediaRecorder API | Gravação operacional |
+| Canvas API | Captura de imagens |
 
 </div>
 
@@ -142,94 +153,26 @@ Esse projeto serve como base para uma evolução maior, futuramente podendo incl
 
 <div align="center">
 
-## 📦 STATUS DO PROJETO
+## 🧱 ESTRUTURA DO PROJETO
 
 </div>
 
-<div align="center">
-
-### Versão atual: `v1.0.0`
-
-</div>
-
-Esta versão representa o primeiro MVP funcional do sistema.
-
-O foco principal foi validar:
-
-- estrutura visual;
-- fluxo operacional;
-- organização dos dados;
-- captura de evidências;
-- responsividade;
-- potencial de evolução do produto.
-
----
-
-<div align="center">
-
-## 🗺️ ROADMAP
-
-</div>
-
-### v1.1.0 — Refinamento visual
-
-- Melhorias no layout
-- Ajustes finos de responsividade
-- Melhor hierarquia visual
-- Organização dos componentes da interface
-
-### v1.2.0 — Evidências operacionais
-
-- Melhor controle das fotos capturadas
-- Pré-visualização das imagens
-- Organização do pacote da operação
-- Exportação mais clara das informações
-
-### v2.0.0 — Estrutura profissional
-
-- Reformulação do código
-- Separação melhor dos arquivos
-- Base preparada para backend
-- Estrutura mais escalável
-
-### Futuras versões
-
-- Sistema de login
-- Histórico de operações
-- Banco de dados
-- Armazenamento em nuvem
-- Integração com Microsoft Teams
-- Dashboard operacional
-- Detecção automática por câmera
-
----
-
-<div align="center">
-
-## 📚 APRENDIZADOS
-
-</div>
-
-Durante o desenvolvimento do **Operion**, foram trabalhados conceitos importantes de desenvolvimento web e pensamento de produto:
-
-- criação de MVP;
-- estruturação de interface responsiva;
-- manipulação de dados no front-end;
-- uso de câmera pelo navegador;
-- organização de fluxo operacional;
-- planejamento de versões;
-- desenvolvimento aplicado a uma necessidade real.
-
----
-
-<div align="center">
-
-## 👨‍💻 DESENVOLVEDOR
-
-**Enzo Toffanin**
-
-Projeto desenvolvido como parte da minha evolução prática em desenvolvimento de software, com foco em criar soluções úteis para problemas reais de operações logísticas e industriais.
-
-<br>
-
-</div>
+```txt
+frontend/
+│
+├── assets/
+│   ├── icons/
+│   ├── images/
+│   └── videos/
+│
+├── scripts/
+│   ├── camera.js
+│   ├── recorder.js
+│   ├── state.js
+│   ├── ui.js
+│   └── main.js
+│
+├── styles/
+│   └── global.css
+│
+└── index.html
